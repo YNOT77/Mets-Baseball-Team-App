@@ -5,7 +5,12 @@
 body {
     margin: 0;
     font-family: 'Poppins';
-    background-color: grey;
+    /* background-color: grey; */
+    background-color: #002d72;
+    background-image: url('assets/citi-field.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 .container {
@@ -52,7 +57,9 @@ ul.nav-ul li img{
 }
 
 /* Hero Section */
-
+.hero{
+    
+}
 .hero .container{
     padding-top: 3em;
     padding-bottom: 3em;
@@ -60,6 +67,8 @@ ul.nav-ul li img{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: stretch;
+
 }
 .hero .left-col,
 .hero .right-col{
