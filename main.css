@@ -12,31 +12,32 @@ body {
     width: 1080px;
     margin: 0 auto;
 }
-
+/* text */
+h1{
+    font-size: 2em;
+}
+h2{
+    font-size: 1.4em;
+}
 /* Navbar */
 section.navbar{
-    border: 1px solid red;
     background-color: #002d72;
     color: white;
   }
 
-div.container{
-    border: 1px solid green;
-}
 
+ul{
+    list-style: none;
+}
 ul.nav-ul{
-    border: 1px solid black;
     padding: 0;
     margin: 0;
-    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* height: auto; */
 }
 
 ul.nav-ul li{
-    border: 1px solid black;
     margin: 0;
     padding: 0;
     display: flex;
@@ -47,12 +48,10 @@ ul.nav-ul li{
  
 ul.nav-ul li img{
     width: 1em;
-    /* align-self: center; */
 }
 
 /* Hero Section */
-.hero{
-}
+
 .hero .container{
     padding-top: 3em;
     padding-bottom: 3em;
@@ -65,4 +64,30 @@ ul.nav-ul li img{
 .hero .right-col{
     width: 50%;
     text-align: center;
+}
+.hero .right-col{
+    visibility: hidden;
+    text-align: left;
+}
+.hero .right-col ul{
+    padding-left: 6em;
+}
+.hero .left-col ul{
+    padding-left: 5em;
+    text-align: left;
+}
+.hero .left-col h2{
+    background-color: lightgray;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-left: 2em;
+    text-align: left;
+}
+.right-col .picture,
+.right-col h2,
+.right-col h1 {
+    text-align: center;
+}
+.picture img{
+    border-radius: 1em;
 }
