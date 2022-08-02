@@ -7,7 +7,7 @@ async function apiRequest(){
         const response = await fetch(`https://mets-baseball-team-api.herokuapp.com/api/${playerName}`)
         const data = await response.json()
         console.log(data)
-        document.querySelector('.right-col').style.visibility = "visible"
+        document.querySelector('.visibility').style.visibility = "visible"
         document.getElementById("playerName").innerText = `${data['firstName']} ${data['lastName']}`
         document.getElementById("playerImage").src = data['image']
 
